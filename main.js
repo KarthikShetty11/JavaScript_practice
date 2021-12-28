@@ -11,11 +11,12 @@ console.log(message)
 
 age/=5
 console.log(age)
+*/
 
 // ------------------- Array literals--------------------------------
 
-//const numbers = []
-const numbers = new Array(1,2,3,4,5,6);
+/*
+const numbers = new Array(1,2,3,4,5,6); //or const numbers = []
 numbers[2] = 9;
 console.log(numbers);
 console.log(numbers[2])
@@ -25,8 +26,8 @@ colors[4] = 'black'
 
 colors.push('white')
 
-//colors.pop();
-let lastColor = colors.pop();
+
+let lastColor = colors.pop(); //colors.pop();
 
 let firstColor = colors.shift();
 
@@ -77,14 +78,15 @@ console.log(person.email)
 delete person.age;
 console.log(person)
 
-const { firstName,lastName} = person
-console.log(firstName, lastName)
+//deconstructing(pull the objects out which are only needed)
+const { firstName,lastName, address:{city}} = person
+console.log(firstName, lastName , city)
 */
 
 //array of object----------------------------
-
-const people= [
-{
+/*
+const people = [
+  {
     firstName: 'John',
     lastName: 'Smith',
     age: 30,
@@ -93,9 +95,9 @@ const people= [
         street:'123 Street',
         city: 'Houston',
         state: 'Texas'
-    }
-},
-{
+             }
+  },
+  {
     firstName: 'Mary',
     lastName: 'Smith',
     age: 30,
@@ -104,8 +106,19 @@ const people= [
         street:'123 Street',
         city: 'Houston',
         state: 'Texas'
-    }
-}
+             }
+  }
 ]
 
-console.log()
+const peopleJSON = JSON.stringify(people) //converts array to string i.e JSON
+console.log(peopleJSON)
+
+console.log(JSON.parse(peopleJSON)) //parse back
+*/
+
+//--Functions------------------------------------------
+
+function hello(){
+    console.log('Hello')
+}
+

@@ -220,32 +220,32 @@ console.log(personAgeUnder30)
 
 
 //--------CONDITIONALS-------------------------
-
+/*
 let a=1;
 let b=2;
 
-// function evaluate()
-// {
-//     if(a<b)
-//    {return true}
-// else
-//    {return false}
-// }
+function evaluate()
+{
+    if(a<b)
+   {return true}
+else
+   {return false}
+}
 
-//else use
-// function evaluate()
-// {
-//     return b>a
-// }
+//else use below
+function evaluate()
+{
+    return b>a
+}
 
-// console.log(evaluate())
+console.log(evaluate())
 
 //ternary operator
 
-// let animal = 'cat';
-// let likesCat = animal === 'cat'?true:false;
-// // IF animal EQUALS 'cat' THEN RETURN true ELSE false; 
-// console.log(likesCat);
+let animal = 'cat';
+let likesCat = animal === 'cat'?true:false;
+// IF animal EQUALS 'cat' THEN RETURN true ELSE false; 
+console.log(likesCat);
 
 let animal = 'doge';
 switch(animal)
@@ -262,4 +262,44 @@ default:
       console.log('Niether')  
        break     
 }
+*/
+
+//DOM - Document Object Model
+/*
+// sinngle element selectors
+const list = document.getElementById('list');
+const list = document.querySelector('ul')
+const list = document.querySelector('#list') // # for ID's
+console.log(list);
+
+const listItems = document.querySelector('.list-item') // . for CLASSes
+// query selector only selects the first element that it finds the match to, if we want all then need to use querySelectorAll
+
+//multiple element selector (querySelectorAll)
+const listItems = document.querySelectorAll('.list-item')
+//console.log(listItems);
+
+listItems.forEach(i=>console.log(i.textContent)) // looping through the list items
+*/
+
+//DOM manipulation--------
+
+const list = document.querySelector('#list') 
+
+list.firstElementChild.remove();
+list.lastElementChild.remove();
+
+list.firstElementChild.textContent = "New item"
+list.firstElementChild.innerHTML = "<h1>new<h1>"
+
+list.lastElementChild.style.background = 'red'
+
+
+
+
+
+
+
+
+
 

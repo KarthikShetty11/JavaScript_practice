@@ -13,7 +13,7 @@ age/=5
 console.log(age)
 */
 
-// ------------------- Array literals--------------------------------
+// ------- Array literals-----------------
 
 /*
 const numbers = new Array(1,2,3,4,5,6); //or const numbers = []
@@ -43,7 +43,7 @@ console.log(myArray[4][2])
 */
 
 
-// --------------Object literals-------------------------------------------------------------
+// -----Object literals--------
 /*
 const person={
     firstName: 'John',
@@ -117,8 +117,128 @@ console.log(JSON.parse(peopleJSON)) //parse back
 */
 
 //--Functions------------------------------------------
-
-function hello(){
-    console.log('Hello')
+/*
+function helloo(name){
+    console.log('Hi ' +name )
 }
+
+helloo('Karthik')
+
+
+function hello(firstName, lastName){
+    console.log(`Hello ${firstName} ${lastName}`) //use template literal
+}
+
+hello('Karthik','Shetty')
+
+function convertPercentage(num){
+  return num/100;
+}
+console.log(convertPercentage('karthik')) // gives NaN
+console.log(convertPercentage('50'))
+
+// Arrow function----
+
+const convertPercent = (num) => {
+    return num/100;
+}
+//in case of single line calling and one paramenter we can reduce and write like below
+
+//const convertPercent = num => num/100;
+console.log(convertPercent('500'))
+
+*/
+
+//----------Loops-------------------------------
+/*
+//while loop
+let i = 0;
+while (i<10)
+{
+    console.log(i);
+    i++;
+
+}
+
+//For loop
+
+for(let i=0;i<10;i++){
+    console.log(i)
+}
+
+// looping through array
+
+const people = [
+    {
+      firstName: 'John',
+      lastName: 'Smith',
+      age: 30,
+    
+    },
+    {
+      firstName: 'Mary',
+      lastName: 'Smith',
+      age: 28,
+      
+    }
+  ]
+
+  for(let i=0; i<people.length; i++)
+  {
+      console.log(people[i])
+      console.log(people[i].firstName)
+  }
+// OR USE BELOW 
+  for(let i of people){
+      console.log(i.age)
+  }
+
+//high order array method
+
+people.forEach(function(i)
+    {
+    console.log(i.firstName)
+    }
+);
+
+//also turn high order array method to an arrow function
+
+people.forEach(i => console.log(i.age));
+
+
+// also another array method is MAP. 
+//MAP gives output in array
+
+const a = people.map(i=>i.firstName)
+console.log(a)
+
+//FILTER , filterring out to a new array
+
+const personAgeUnder30 = people.filter(i=>i.age<30)
+console.log(personAgeUnder30)
+*/
+
+
+//--------CONDITIONALS-------------------------
+
+let a=1;
+let b=2;
+
+// function evaluate()
+// {
+//     if(a<b)
+//    {return true}
+// else
+//    {return false}
+// }
+
+//else use
+function evaluate()
+{
+    return b<a
+}
+
+console.log(evaluate())
+
+
 

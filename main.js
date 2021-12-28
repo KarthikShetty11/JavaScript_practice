@@ -233,12 +233,33 @@ let b=2;
 // }
 
 //else use
-function evaluate()
+// function evaluate()
+// {
+//     return b>a
+// }
+
+// console.log(evaluate())
+
+//ternary operator
+
+// let animal = 'cat';
+// let likesCat = animal === 'cat'?true:false;
+// // IF animal EQUALS 'cat' THEN RETURN true ELSE false; 
+// console.log(likesCat);
+
+let animal = 'doge';
+switch(animal)
 {
-    return b<a
+case 'cat':
+    console.log('its cat')
+    break
+
+case 'doge':
+     console.log('its doge')
+     break
+
+default:  
+      console.log('Niether')  
+       break     
 }
-
-console.log(evaluate())
-
-
 

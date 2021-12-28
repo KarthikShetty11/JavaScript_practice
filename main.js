@@ -283,7 +283,7 @@ listItems.forEach(i=>console.log(i.textContent)) // looping through the list ite
 */
 
 //DOM manipulation--------
-
+/*
 const list = document.querySelector('#list') 
 
 list.firstElementChild.remove();
@@ -293,7 +293,16 @@ list.firstElementChild.textContent = "New item"
 list.firstElementChild.innerHTML = "<h1>new<h1>"
 
 list.lastElementChild.style.background = 'red'
+*/
 
+//Events
+/*
+const btn = document.getElementById('myBtn');
+//btn.addEventListener ('click', (e)=>{ console.log(e)});
+btn.addEventListener ('mouseover', (e)=>{ 
+    btn.style.background ='blue'
+    console.log(e)});
+*/
 
 
 

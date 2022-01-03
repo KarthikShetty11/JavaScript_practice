@@ -12,13 +12,13 @@
      fetch('https://jsonplaceholder.typicode.com/users')
   .then((response) => response.json())
   .then((json) => {
-      //console.log(users.length)
-         var users = json.users;
+      //console.log(json)
+         var users = json;
          var output = "";
-         console.log(json.length)
-       for( var i=0; i< json.length; i++)
+         console.log(users.length)
+       for( var i=0; i< users.length; i++)
        {
-           output += "<li>" + json[i].name + "</li>" ;
+           output += "<li>" + users[i].name + "</li>" ;
        }
        document.getElementById("users").innerHTML = output;
   }

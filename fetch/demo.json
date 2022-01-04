@@ -1,0 +1,45 @@
+[
+    {
+        "firstName": "John",
+        "lastName" : "Doe",
+        "Address" : {
+            "street" :"123 Street",
+            "city": "houston",
+            "State": "TX"
+            },
+        "email":"johndoe@gmail.com",
+        "phone": "555-555-5555"
+    },
+    {
+        "firstName": "John",
+        "lastName" : "Doe",
+        "Address" : {
+            "street" :"123 Street",
+            "city": "houston",
+            "State": "TX"
+            },
+        "email":"johndoe@gmail.com",
+        "phone": "555-555-5555"
+    },
+    {
+        "firstName": "Jane",
+        "lastName" : "Doe",
+        "Address" : {
+            "street" :"123 Street",
+            "city": "houston",
+            "State": "TX"
+            },
+        "email":"janedoe@gmail.com",
+        "phone": "333-333-3333"
+    },{
+        "firstName": "Bob",
+        "lastName" : "Doe",
+        "Address" : {
+            "street" :"123 Street",
+            "city": "houston",
+            "State": "TX"
+            },
+        "email":"bobdoe@gmail.com",
+        "phone": "444-444-4443"
+    }
+]

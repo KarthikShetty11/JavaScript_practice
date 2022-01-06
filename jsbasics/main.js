@@ -169,10 +169,39 @@ console.log(message())
   function message(a){
       return `hello ${a}`;
   }
-  */ 
+  
   //let message = a => `hello ${a}`;
     let message = (a,b)=> `hello ${a} and ${b}`
     console.log(message('Karthik','John'));
+    console.log(message('Jane','Bob'));
+*/
+
+  // anonymus fuction into arrow function
+  /* 
+    document.addEventListener('click', function(){
+        console.log('click');
+    })
+
+    //turning into arrow below
+document.addEventListener('click',()=>{console.log('click')})
+
+
+
+const people = [
+    {
+        fName:'John', 
+        lName:'Smith'
+    },
+    {
+        fName: 'Marry',
+        lName: 'Clark'
+    }
+]
+
+//console.log(people.map(function(a){return a.fName}) )
+console.log(people.map ((a) => a.fName))
+console.log(people.map (a => a.lName))
+*/
 
 //----------Loops-------------------------------
 /*

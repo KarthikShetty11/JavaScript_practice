@@ -136,18 +136,43 @@ function convertPercentage(num){
 }
 console.log(convertPercentage('karthik')) // gives NaN
 console.log(convertPercentage('50'))
+*/
 
-// Arrow function----
-
+// -------Arrow function-------------
+/*
 const convertPercent = (num) => {
     return num/100;
 }
-//in case of single line calling and one paramenter we can reduce and write like below
+    //in case of single line calling and one paramenter we can reduce and write like below
 
-//const convertPercent = num => num/100;
-console.log(convertPercent('500'))
-
+ const convertPercent = num => num/100;
+ console.log(convertPercent('500'))
 */
+
+/*
+function message(){ //normal function
+     return 'hello';
+     }
+
+    // turning it to an arrow fucntion
+let message = () => {
+    return 'hello world'
+}
+
+    // also can be written as below to implicitly return what ever has been given after arrow
+let message = () => 'hello'
+console.log(message())
+ */
+
+  // with ARGUMENT
+/*
+  function message(a){
+      return `hello ${a}`;
+  }
+  */ 
+  //let message = a => `hello ${a}`;
+    let message = (a,b)=> `hello ${a} and ${b}`
+    console.log(message('Karthik','John'));
 
 //----------Loops-------------------------------
 /*
